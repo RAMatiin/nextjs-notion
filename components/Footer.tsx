@@ -5,6 +5,8 @@ import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
+import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
@@ -53,6 +55,30 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
+        {config.facebook && (
+          <a
+            className={styles.facebook}
+            href={`https://facebook.com/${config.twitter}`}
+            title={`Facebook @${config.twitter}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaFacebook />
+          </a>
+        )}
+        
+        {config.instagram && (
+          <a
+            className={styles.instagram}
+            href={`https://instagram.com/${config.instagram}`}
+            title={`Instagram @${config.instagram}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaInstagram />
+          </a>
+        )}
+
         {config.twitter && (
           <a
             className={styles.twitter}

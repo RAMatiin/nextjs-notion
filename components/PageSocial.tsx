@@ -5,6 +5,9 @@ import cs from 'classnames'
 import * as config from '@/lib/config'
 
 import styles from './PageSocial.module.css'
+import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram'
+import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook'
 
 interface SocialLink {
   name: string
@@ -14,14 +17,36 @@ interface SocialLink {
 }
 
 const socialLinks: SocialLink[] = [
+  config.facebook && {
+    name: 'facebook',
+    href: `https://facebook.com/${config.twitter}`,
+    title: `Facebook @${config.twitter}`,
+    icon: (
+      // <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+      //   <path d='M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.35C0 23.403.597 24 1.325 24h21.35C23.403 24 24 23.403 24 22.675V1.325C24 .597 23.403 0 22.675 0zm-1.7 12.287h-4.049v10.024h-4.438V12.287h-3.23V8.793h3.23V6.591c0-3.179 1.888-4.92 4.676-4.92 1.327 0 2.617.244 2.617.244v2.858h-1.475c-1.52 0-1.989.943-1.989 1.91v2.021h3.788l-.603 3.494z' />
+      // </svg>
+      <FaFacebook />
+    )
+  },
+
+  config.instagram && {
+    name: 'instagram',
+    href: `https://instagram.com/${config.twitter}`,
+    title: `Instagram @${config.twitter}`,
+    icon: (
+      <FaInstagram />
+    )
+  },
+
   config.twitter && {
     name: 'twitter',
     href: `https://twitter.com/${config.twitter}`,
     title: `Twitter @${config.twitter}`,
     icon: (
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-        <path d='M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z' />
-      </svg>
+      // <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+      //   <path d='M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z' />
+      // </svg>
+      <FaTwitter />
     )
   },
 

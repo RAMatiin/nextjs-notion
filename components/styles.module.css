@@ -90,6 +90,14 @@
   color: #2795e9;
 }
 
+.facebook:hover {
+  color: #3b5998;
+}
+
+.instagram:hover {
+  color: #d31253;
+}
+
 .twitter:hover {
   color: #2795e9;
 }
@@ -218,3 +226,4 @@
 .hidden {
   visibility: hidden;
 }
+

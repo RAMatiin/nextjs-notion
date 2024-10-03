@@ -10,6 +10,8 @@ export interface SiteConfig {
   description?: string
   language?: string
 
+  instagram?: string
+  facebook?: string
   twitter?: string
   github?: string
   linkedin?: string

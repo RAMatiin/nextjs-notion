@@ -10,17 +10,19 @@ export default siteConfig({
 
   // .
   // basic site info (required)
-  name: 'Keranjang Ku',
-  domain: 'nextjs-notion-mu.vercel.app',
-  author: 'Ridwan AM',
+  name: 'Rekobeli',
+  domain: 'nextjs-notion-rush.vercel.app',
+  author: 'Rekobeli',
 
   // open graph metadata (optional)
   description: 'Webiste Kentajang Ku',
 
   // social usernames (optional)
+  instagram: '/',
+  facebook: '/',
   twitter: '/',
-  github: '/',
-  linkedin: '/',
+  github: '',
+  linkedin: '',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
